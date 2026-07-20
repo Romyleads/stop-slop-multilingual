@@ -155,7 +155,7 @@ passes on older Russian-language web sources: verify the fetched text is
 actually legible before treating it as read, don't assume a 200 response
 means readable content.
 
-Current locale content version: `0.4.0-draft` (see `SYNC_STATUS.md`).
+Current locale content version: `0.5.0-draft` (see `SYNC_STATUS.md`).
 `-draft` stays in the version string as long as `be.md`/`bg.md` are
 unreviewed stubs and `de.md` is unreviewed — drop it only when every
 bundled language has had a native-speaker pass, not before.
@@ -341,7 +341,7 @@ decorative in German -- no known exception for genuine logical contrast.
 ### Version bump
 `de.md` moved from unaided-knowledge draft to externally-grounded,
 matching what happened to `ru.md`/`uk.md` in an earlier pass. Bumped
-locale content version to 0.4.0-draft in `SYNC_STATUS.md`. Still
+locale content version to 0.5.0-draft in `SYNC_STATUS.md`. Still
 `-draft` overall: be/bg remain untouched stubs and no locale has had a
 native-speaker pass yet -- one well-sourced language doesn't change
 that for the other four.

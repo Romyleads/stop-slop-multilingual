@@ -8,7 +8,7 @@
 
 ## Our locale additions
 
-- locales_version: 0.4.0-draft
+- locales_version: 0.5.0-draft
 - locales_updated: 2026-07-21
 - status:
   - ru: grounded in external sources (Нора Галь, ilyautov/humanizer-ru MIT, 1ps.ru/awwwake) — still unreviewed by a native proofreader, but no longer pure by-analogy guesswork
