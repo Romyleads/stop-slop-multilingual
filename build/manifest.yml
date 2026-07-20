@@ -1,0 +1,48 @@
+targets:
+  - name: stop-slop-ru
+    description: "Убирает ИИ-штампы и клише из русского текста при редактировании."
+    langs: [ru]
+    include_english: false
+
+  - name: stop-slop-ua
+    description: "Прибирає штампи нейромереж з українського тексту під час редагування."
+    langs: [uk]
+    include_english: false
+
+  - name: stop-slop-by
+    description: "Прыбірае штампы нейрасетак з беларускага тэксту пры рэдагаванні. Draft quality — see references/be.md."
+    langs: [be]
+    include_english: false
+
+  - name: stop-slop-bg
+    description: "Премахва AI клишета от български текст при редактиране. Draft quality — see references/bg.md."
+    langs: [bg]
+    include_english: false
+
+  - name: stop-slop-ru-ua
+    description: "Убирает ИИ-штампы из русского и украинского текста, автоматически определяя язык. Без английского."
+    langs: [ru, uk]
+    include_english: false
+
+  - name: stop-slop-en-ru-ua
+    description: "Removes AI writing patterns from English, Russian, and Ukrainian text, detecting language automatically. Drop-in replacement for the official English-only stop-slop skill if you write in all three languages."
+    langs: [ru, uk]
+    include_english: true
+
+  - name: stop-slop-de
+    description: "Entfernt typische KI-Textmuster aus deutschem Text. Starter-Set, noch nicht von einem Muttersprachler geprüft."
+    langs: [de]
+    include_english: false
+
+  - name: stop-slop-en-de
+    description: "Removes AI writing patterns from English and German text, detecting language automatically."
+    langs: [de]
+    include_english: true
+
+  # Deliberately not called "full" or "all" -- this repo does not cover every
+  # language, and a name implying completeness would mislead people browsing
+  # Releases. The name always spells out exactly what's bundled instead.
+  - name: stop-slop-en-ru-ua-be-bg-de
+    description: "Removes AI writing patterns across English, Russian, Ukrainian, Belarusian, Bulgarian, and German text, detecting language automatically. Bundles every language currently in this repo -- not 'all languages'."
+    langs: [ru, uk, be, bg, de]
+    include_english: true
