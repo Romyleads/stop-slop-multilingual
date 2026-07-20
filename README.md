@@ -129,7 +129,7 @@ Below 35/50: revise.
 
 This is a fork of [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) (MIT). To be explicit about what's whose:
 
-- **Unchanged from upstream:** `SKILL.md`, `references/phrases.md`, `references/structures.md`, `references/examples.md`, the 8 Core Rules, and the Scoring rubric. All of it is the original author's work, reused here under the MIT license he published it with.
+- **Unchanged from upstream:** `references/phrases.md`, `references/structures.md`, `references/examples.md`, plus the 8 Core Rules and the Scoring rubric (carried inside `references/core-method.md` and every built package's `SKILL.md`). All of it is the original author's work, reused here under the MIT license he published it with.
 - **Added by this fork:** the Russian/Ukrainian/Belarusian/Bulgarian/German reference files, the language router, the build system that packages everything above into the downloadable combinations in the table, and this README's visual presentation - built independently of upstream's own banner/README design.
 - **Portions of `references/locales/ru.md` and the "statistical deviation" framing in `references/core-method.md`** are adapted, with attribution, from [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) (MIT) - an independent, more mature Russian-language project doing closely related work. Where the two projects disagree (see the `ru.md` note on binary contrasts), we kept our own narrower rule and documented why rather than silently picking one.
 

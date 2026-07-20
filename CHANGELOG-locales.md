@@ -345,3 +345,39 @@ locale content version to 0.4.0-draft in `SYNC_STATUS.md`. Still
 `-draft` overall: be/bg remain untouched stubs and no locale has had a
 native-speaker pass yet -- one well-sourced language doesn't change
 that for the other four.
+
+## 2026-07-21 (first real CI run failed; root cause was the project archive, not CI)
+
+### What happened
+The very first workflow run on the published standalone repo failed with
+exit 1. Reproduced locally on an exact copy of the pushed tree: 5
+packages built, then FileNotFoundError on references/phrases.md.
+
+### Root cause
+The project transfer archive deliberately packed only this fork's own
+files and never included upstream's three English reference files
+(phrases.md, structures.md, examples.md) -- fine under the original
+fork-based publishing plan where upstream files come with the clone,
+wrong for the standalone-repo path actually taken. The publishing
+instructions weren't re-checked against the archive's contents. A
+second, own defect compounded it: validate_targets() checked locale
+files but not the English ones, so the failure surfaced as a raw
+traceback mid-build instead of a clear pre-build error.
+
+### Fixed
+- The three upstream files now ship in the project archive (MIT,
+  attribution already in LICENSE and README).
+- validate_targets() now checks EN_FILES for any include_english
+  target, failing before any package is built, with a message naming
+  the target, the file, and where the files come from.
+- actions/checkout v4 -> v5, actions/setup-python v5 -> v6 (Node 24),
+  which also clears the deprecation warning from the failed run.
+  Versions confirmed to exist via release pages, not guessed.
+- README's "unchanged from upstream" list no longer names root
+  SKILL.md, which doesn't exist in the standalone repo.
+
+### Verified
+Normal build (9 packages), negative test (phrases.md removed ->
+clean ManifestError, exit 1, nothing built), and a full simulation of
+the user's pushed tree plus these fixes (exit 0, all 9 built, workflow
+YAML parses).

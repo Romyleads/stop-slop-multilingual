@@ -71,6 +71,15 @@ def validate_targets(targets: list[dict]) -> None:
         include_english = target.get("include_english", False)
         if not langs and not include_english:
             raise ManifestError(f"{where} ({name}): no langs and include_english is false -- package would be empty")
+        if include_english:
+            for fname in EN_FILES:
+                if not (REFS / fname).is_file():
+                    raise ManifestError(
+                        f"{where} ({name}): include_english is true but upstream file "
+                        f"references/{fname} is missing from this checkout. These three files "
+                        f"({', '.join(EN_FILES)}) come from hardikpandya/stop-slop (MIT) and must "
+                        f"be present in references/ for any English-including package."
+                    )
         for lang in langs:
             if lang not in LANG_NAMES:
                 raise ManifestError(
