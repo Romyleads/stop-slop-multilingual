@@ -381,3 +381,34 @@ Normal build (9 packages), negative test (phrases.md removed ->
 clean ManifestError, exit 1, nothing built), and a full simulation of
 the user's pushed tree plus these fixes (exit 0, all 9 built, workflow
 YAML parses).
+
+## 2026-07-21 (first live field test of a built package)
+
+### Setup
+stop-slop-ru v0.4.0 installed into Claude Code from the published
+release. A/B generation test: same prompt (CRM-implementation company
+"about us" text, ~250 words, Russian), one run without the skill, one
+with it.
+
+### Results
+Both texts came out clean on every classic ru.md marker: zero
+"является," zero "данный," zero throat-clearing openers, zero split
+predicates, zero meta-summaries, zero clone bullets, concrete details
+throughout. Honest conclusion: modern Claude barely produces classic
+Russian slop in this genre even unaided, so a generation test on this
+model cannot demonstrate the skill's value -- its real use case is
+cleaning other models' and older texts, plus editing, not restraining a
+model that is already restrained.
+
+### One real finding -> one rule change
+Both texts (with AND without the skill) contained 7-8 "не X, а Y"
+constructions per ~250 words. Each instance individually passes our
+decorative-vs-contentful test; the density is the problem -- the text
+reads as continuous polemic against an invisible opponent. The rule as
+written policed single-instance decorativeness but said nothing about
+density, so the skill correctly let every instance through. Added a
+density guideline to ru.md (more than 2-3 per ~300 words = rhythmic
+tic even when each is justified, with rewrite strategies that vary the
+form instead of deleting the contrast). Likely applies to uk/de as
+well but observed only in Russian so far -- not propagated by analogy,
+per project discipline.
