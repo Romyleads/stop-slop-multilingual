@@ -39,7 +39,7 @@ jobs:
 
       - name: Upload as workflow artifact (manual test run)
         if: github.event_name == 'workflow_dispatch'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: stop-slop-packages
           path: dist/*.zip
