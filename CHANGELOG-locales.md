@@ -412,3 +412,22 @@ tic even when each is justified, with rewrite strategies that vary the
 form instead of deleting the contrast). Likely applies to uk/de as
 well but observed only in Russian so far -- not propagated by analogy,
 per project discipline.
+
+## 2026-07-21 (field test 2: known-answer target text, 12/12)
+
+Fed a synthetic target text with 12 planted marker groups and 2
+false-positive traps to the installed stop-slop-ru-ua (v0.4.0 release
+build) via Claude Code. All 12 groups neutralized, including the
+strongest rewrite of the test: vague "целый ряд факторов" replaced
+with three concrete named obstacles. Both traps survived without
+grammatical damage (rephrased rather than preserved verbatim, which is
+legitimate under a full-rewrite instruction). The skill also produced
+its own grammatically correct dash, confirming the dash-exception rule
+does not over-purge.
+
+Residuals, both expected: contrast density hit 3 per ~150 words --
+third consecutive text confirming the density rule added after v0.4.0
+shipped (the installed package predates it; goes out with the next
+release), and one soft unverifiable claim ("всё больше компаний") that
+no current rule covers -- noted, not yet acted on, one occurrence is
+not a pattern.
