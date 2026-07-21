@@ -8,7 +8,7 @@ on:
 # softprops/action-gh-release uploads assets via GITHUB_TOKEN, which needs
 # write access to repo contents. New repos default to a read-only token, so
 # without this block the "Attach to release" step fails with 403 on the
-# very first real release - exactly when it's most annoying to debug.
+# very first real release -- exactly when it's most annoying to debug.
 permissions:
   contents: write
 
@@ -29,7 +29,7 @@ jobs:
       # The build script now self-verifies package contents (no research/
       # leakage, SKILL.md present, everything under the package dir), so a
       # regression in the script itself fails the build here rather than
-      # shipping a bad zip to a release. 
+      # shipping a bad zip to a release.
 
       - name: Attach to release
         if: github.event_name == 'release'
@@ -39,7 +39,7 @@ jobs:
 
       - name: Upload as workflow artifact (manual test run)
         if: github.event_name == 'workflow_dispatch'
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v4
         with:
           name: stop-slop-packages
           path: dist/*.zip

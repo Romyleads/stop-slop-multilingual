@@ -101,16 +101,47 @@ example you can construct confidently, say so instead of inventing one:
 
 ### Belarusian
 ```
-- Almost nothing externally confirmed. Only a 3-item draft (opener
-  cliches, "у сучасным свеце" filler, a dash caveat borrowed by
-  analogy from Russian/Ukrainian -- NOT verified for Belarusian
-  specifically). This is effectively a first pass.
+- Confirmed so far: hybrid future tense (Polish interference, not
+  Russian -- don't assume Russian by default), comma-in-address errors,
+  pseudo-word/orthographic-near-miss acceptance, case-government
+  errors, dash-omission grammar (personal-pronoun subject / negation
+  "не" -- triple-confirmed via law + Ministry standard + exam-prep
+  materials, though the AI-behavior claim itself is reasoned, not
+  benchmarked), "не X, а Y" resolved as a genuine operator like Russian
+  (not decorative-only like German). Full detail in
+  research/bibliography.md.
+- STILL OPEN: opener cliches ("Варта адзначыць") and empty amplifiers
+  ("у сучасным свеце") remain unverified draft guesses, never
+  externally checked. Also open: whether "Падводзячы вынік" specifically
+  is an AI-marker -- two searches explicitly failed to find a source
+  for this despite trying; the grammatical argument against it (gerund-
+  clause subject mismatch) is plausible but unconfirmed. A future pass
+  could target these two gaps specifically, the same way this one
+  targeted dash/contrast/meta-commentary narrowly.
+- Do not re-search topics already confirmed above -- five more sources
+  on the future-tense or pseudo-word topics would be redundant.
+- IMPORTANT CAVEAT FOR THE RESEARCHER: Belarusian has two competing
+  orthographic standards in real use -- official ("наркамаўка") and
+  classical ("тарашкевіца"). This is a live political/cultural
+  sensitivity, not a neutral spelling-variant choice. Any source found
+  must have its examples checked against which standard they use, and
+  that should be noted in the output. Do not silently normalize
+  examples from one standard to the other, and do not treat either
+  standard as more "correct" than the other in the write-up.
 ```
 
 ### Bulgarian
 ```
 - Same situation as Belarusian: 3-item draft, nothing confirmed. First
   pass.
+- IMPORTANT CAVEAT FOR THE RESEARCHER: Bulgarian is South Slavic, not
+  East Slavic like Russian/Ukrainian/Belarusian -- it lost noun case
+  almost entirely, uses a postfixed definite article, and has a
+  fundamentally different verb aspect/tense system. Patterns that hold
+  for the East Slavic three (calqued copula drop-in, participial-
+  clause overuse mirroring Russian/Ukrainian grammar) should NOT be
+  assumed to transfer here by analogy. Treat this as a genuinely
+  separate language, not "Russian with different spelling."
 ```
 
 ### German

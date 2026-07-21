@@ -155,7 +155,7 @@ passes on older Russian-language web sources: verify the fetched text is
 actually legible before treating it as read, don't assume a 200 response
 means readable content.
 
-Current locale content version: `0.5.0-draft` (see `SYNC_STATUS.md`).
+Current locale content version: `0.7.0-draft` (see `SYNC_STATUS.md`).
 `-draft` stays in the version string as long as `be.md`/`bg.md` are
 unreviewed stubs and `de.md` is unreviewed — drop it only when every
 bundled language has had a native-speaker pass, not before.
@@ -341,7 +341,7 @@ decorative in German -- no known exception for genuine logical contrast.
 ### Version bump
 `de.md` moved from unaided-knowledge draft to externally-grounded,
 matching what happened to `ru.md`/`uk.md` in an earlier pass. Bumped
-locale content version to 0.5.0-draft in `SYNC_STATUS.md`. Still
+locale content version to 0.7.0-draft in `SYNC_STATUS.md`. Still
 `-draft` overall: be/bg remain untouched stubs and no locale has had a
 native-speaker pass yet -- one well-sourced language doesn't change
 that for the other four.
@@ -431,3 +431,102 @@ shipped (the installed package predates it; goes out with the next
 release), and one soft unverifiable claim ("всё больше компаний") that
 no current rule covers -- noted, not yet acted on, one occurrence is
 not a pattern.
+
+## 2026-07-21 (Belarusian pass: 2 reports, one unusually strong, one attribution error caught)
+
+### Verified before writing anything
+Two independent deep-research reports arrived for Belarusian. Checked
+sources individually rather than trusting either report's table at face
+value, per project discipline. One report used a citation style with
+inline markers pointing to real, fetchable sources -- both of its
+checkable claims (hybrid future tense, orthographic pseudo-word
+acceptance) were confirmed *verbatim* against the actual paper texts,
+including full prompt logs in one case. This is the strongest single
+source this project has verified so far.
+
+### Attribution error caught and corrected
+One report attributed the DiSlaw paper "Navigating Language Contact in
+the Digital Age" to "Anna Berenika Siwirska." She's a real scholar (an
+actual different paper of hers is cited, correctly, inside the Poritski
+et al. ACL paper) -- but she didn't write this one. The real author is
+Tatsiana Nazaranka (University of Salzburg). Both the researcher and
+the topic area are real; the byline was wrong. Logged in
+bibliography.md rather than silently fixed, since this is exactly the
+kind of plausible-sounding-but-wrong attribution the verification step
+exists to catch.
+
+### be.md rewritten, no longer a pure stub
+Added: hybrid future tense (будзе + past participle instead of
+infinitive -- and notably explained by the source as *Polish*
+interference, not Russian, correcting an unstated assumption this
+project was carrying by analogy from Ukrainian), comma-in-address and
+GPT's own hypercorrective comma before "і", pseudo-word/orthographic
+near-miss acceptance (масштабны/маштабны etc.), case-government errors
+in grammar tasks. Two more sources confirmed to exist (BSUIR conference
+paper, Kaleta's Warsaw dissertation) but their specific content claims
+weren't independently verified line-by-line -- logged as
+"confirmed, source exists" rather than fully "confirmed," an
+intermediate status this project hasn't needed before.
+
+### Not resolved
+The dash section remains an unconfirmed draft -- neither report
+addressed it. Bureaucratic-periphrase claims from Старасценка/
+Кісель-Якубук/Цыганкоў sources logged as seed, not searched for
+individually this pass.
+
+### Fixed a structural leftover while here
+`research/bibliography.md`'s "Not yet searched" section had an orphaned
+Belarusian line with no line break before the German section header,
+left over from an earlier edit. Fixed while adding the new content.
+
+## 2026-07-21 (Belarusian pass #3: targeted 3-gap follow-up, strong grammar confirmation)
+
+### Setup
+Narrow follow-up prompt asked specifically for dash, formulaic-contrast,
+and meta-commentary sources -- not a general survey -- since two prior
+reports never touched these. Two reports came back; one (doc B) was
+notably more careful than any prior report in this project: it
+explicitly logged when parallel searches timed out and explicitly
+stated no source ties "Падводзячы вынік" to AI specifically, rather
+than asserting it anyway.
+
+### Strongest single grammar confirmation this project has found
+The dash-omission rules (no dash when subject is a personal pronoun;
+no dash when negation "не" sits between subject and predicate) were
+confirmed not just in the 2008 orthography law itself, but verbatim
+in an official Ministry of Education exam-standard document, and
+corroborated a third time via independent exam-prep materials. Three
+independent official/quasi-official sources agreeing verbatim is the
+strongest confirmation depth reached so far.
+
+### Important distinction preserved, not glossed over
+The grammar NORM is confirmed. The claim that LLMs specifically
+VIOLATE it (by calquing English negated-copula "is not") is a
+plausible, unverified inference -- no benchmark of actual LLM output
+against this rule was found. Written into be.md with this distinction
+stated explicitly: a confirmed grammar fact is not the same thing as a
+confirmed AI-behavior finding, even when the reasoning connecting them
+is sound.
+
+### "не X, а Y" resolved for Belarusian
+The 2008 law codifies genuine-contrast usage explicitly (including a
+variant without the conjunction "а" for real contrast), settling the
+question the same way as Russian: a real logical operator, not
+inherently decorative like in German. Marker is decorative use only
+(Y restates X instead of correcting it).
+
+### Not confirmed, logged honestly
+"Падводзячы вынік" as an AI-marker specifically -- both this pass and
+project discipline required NOT silently upgrading a plausible
+grammatical argument (gerund-clause subject mismatch, analogous to the
+already-sourced Russian rule from Nora Gal) into a "confirmed" finding
+just because it's plausible and a parallel exists in a related
+language. Logged as reasoned-but-unconfirmed in be.md.
+
+### One more unfindable citation
+"Кіло слова" podcast episode -- searched directly, found nothing. Same
+shape as the earlier Acer Blog Ukraine / Cityhost.ua non-sources: a
+specific, confident citation that doesn't check out. This is now the
+fourth time this exact pattern has appeared across three languages;
+worth treating any single confidently-named podcast/blog citation
+with extra suspicion going forward, independent of how it's phrased.
