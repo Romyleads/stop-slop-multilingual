@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-3f7fbf)
 ![Languages](https://img.shields.io/badge/languages-EN%20%C2%B7%20RU%20%C2%B7%20UA%20%C2%B7%20BE%20%C2%B7%20BG%20%C2%B7%20DE-6b4c8a)
-![Fork of](https://img.shields.io/badge/fork%20of-hardikpandya%2Fstop--slop-c98a2c)
+![Sources verified](https://img.shields.io/badge/sources-24%20verified-4a8f5c)
 
 A Claude Skill that catches predictable AI writing patterns before they ship — now in six languages, with room for more.
 
