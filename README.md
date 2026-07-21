@@ -56,9 +56,9 @@ Each package below is self-contained: install `ru` and you get zero English or U
 | 🟦 | `stop-slop-en-ru-ua` | English + Russian + Ukrainian | [.zip](../../releases/latest/download/stop-slop-en-ru-ua.zip) |
 | 🟥 | `stop-slop-ru` | Russian only | [.zip](../../releases/latest/download/stop-slop-ru.zip) |
 | 🟩 | `stop-slop-ua` | Ukrainian only | [.zip](../../releases/latest/download/stop-slop-ua.zip) |
-| 🟧 | `stop-slop-by` | Belarusian only — sourced, not yet native-reviewed, see [status](SYNC_STATUS.md) | [.zip](../../releases/latest/download/stop-slop-by.zip) |
+| 🟧 | `stop-slop-by` | Belarusian only | [.zip](../../releases/latest/download/stop-slop-by.zip) |
 | 🟪 | `stop-slop-bg` | Bulgarian only — draft, see [status](SYNC_STATUS.md) | [.zip](../../releases/latest/download/stop-slop-bg.zip) |
-| 🟦 | `stop-slop-de` | German only — sourced, not yet native-reviewed, see [status](SYNC_STATUS.md) | [.zip](../../releases/latest/download/stop-slop-de.zip) |
+| 🟦 | `stop-slop-de` | German only | [.zip](../../releases/latest/download/stop-slop-de.zip) |
 | 🟦 | `stop-slop-en-de` | English + German | [.zip](../../releases/latest/download/stop-slop-en-de.zip) |
 | ⬜ | `stop-slop-ru-ua` | Russian + Ukrainian, no English | [.zip](../../releases/latest/download/stop-slop-ru-ua.zip) |
 | ⬜ | `stop-slop-en-ru-ua-be-bg-de` | English + Russian + Ukrainian + Belarusian + Bulgarian + German — every language currently in this repo, named explicitly rather than called "full" (we don't cover all languages, so that name would mislead) | [.zip](../../releases/latest/download/stop-slop-en-ru-ua-be-bg-de.zip) |
