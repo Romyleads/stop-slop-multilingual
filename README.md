@@ -6,6 +6,12 @@
 
 A Claude Skill that catches predictable AI writing patterns before they ship — now in six languages, with room for more.
 
+If you're trying to **detect AI-generated text**, strip out **ChatGPT phrases and clichés**, or **humanize AI writing** before publishing, this is built for exactly that — with dedicated rule sets for Russian, Ukrainian, Belarusian, Bulgarian, and German text, not just English.
+
+Ищете, как **убрать штампы нейросети** из текста, **проверить текст на ИИ**, или **гуманизировать текст после ChatGPT** на русском языке? Этот навык для Claude делает именно это.
+
+Шукаєте, як **прибрати штампи ШІ** з тексту, **перевірити текст на штучний інтелект**, чи зробити текст **після ChatGPT живим** українською? Цей навик створений саме для цього.
+
 ![Stop Slop, multilingual](assets/banner-stop-slop-multilingual.png)
 
 ## The problem
@@ -50,9 +56,9 @@ Each package below is self-contained: install `ru` and you get zero English or U
 | 🟦 | `stop-slop-en-ru-ua` | English + Russian + Ukrainian | [.zip](../../releases/latest/download/stop-slop-en-ru-ua.zip) |
 | 🟥 | `stop-slop-ru` | Russian only | [.zip](../../releases/latest/download/stop-slop-ru.zip) |
 | 🟩 | `stop-slop-ua` | Ukrainian only | [.zip](../../releases/latest/download/stop-slop-ua.zip) |
-| 🟧 | `stop-slop-by` | Belarusian only — draft, see [status](#relationship-to-upstream) | [.zip](../../releases/latest/download/stop-slop-by.zip) |
-| 🟪 | `stop-slop-bg` | Bulgarian only — draft | [.zip](../../releases/latest/download/stop-slop-bg.zip) |
-| 🟦 | `stop-slop-de` | German only — starter set, unreviewed | [.zip](../../releases/latest/download/stop-slop-de.zip) |
+| 🟧 | `stop-slop-by` | Belarusian only — sourced, not yet native-reviewed, see [status](SYNC_STATUS.md) | [.zip](../../releases/latest/download/stop-slop-by.zip) |
+| 🟪 | `stop-slop-bg` | Bulgarian only — draft, see [status](SYNC_STATUS.md) | [.zip](../../releases/latest/download/stop-slop-bg.zip) |
+| 🟦 | `stop-slop-de` | German only — sourced, not yet native-reviewed, see [status](SYNC_STATUS.md) | [.zip](../../releases/latest/download/stop-slop-de.zip) |
 | 🟦 | `stop-slop-en-de` | English + German | [.zip](../../releases/latest/download/stop-slop-en-de.zip) |
 | ⬜ | `stop-slop-ru-ua` | Russian + Ukrainian, no English | [.zip](../../releases/latest/download/stop-slop-ru-ua.zip) |
 | ⬜ | `stop-slop-en-ru-ua-be-bg-de` | English + Russian + Ukrainian + Belarusian + Bulgarian + German — every language currently in this repo, named explicitly rather than called "full" (we don't cover all languages, so that name would mislead) | [.zip](../../releases/latest/download/stop-slop-en-ru-ua-be-bg-de.zip) |
