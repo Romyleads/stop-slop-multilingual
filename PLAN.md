@@ -59,14 +59,15 @@ files outside what's listed above.
 Add:
 ```
 README.md
-assets/banner.svg
+assets/banner-stop-slop-multilingual.png
 ```
 
-Open `assets/banner.svg` in a browser or render it to confirm it displays
+Open `assets/banner-stop-slop-multilingual.png` directly to confirm it displays
 correctly before committing — a broken image in a README is worse than no
-image. To render locally: `pip install cairosvg && python3 -c
-"import cairosvg; cairosvg.svg2png(url='assets/banner.svg',
-write_to='/tmp/preview.png')"`, then view `/tmp/preview.png`.
+image. Since this is already a PNG (not the original SVG this project
+started with), it can be used as-is for GitHub's Social Preview setting
+too (Settings → Social preview) — resize to 1280×640 first if the current
+dimensions don't match; GitHub crops/pads otherwise rather than erroring.
 
 Constraint that must survive future edits: no real national flags and no
 flag emoji anywhere in the banner or README (not even for languages that
@@ -76,8 +77,8 @@ this project's actual audience. Use the existing colored-square /
 abstract-pennant convention instead, consistently, in both the banner and
 the language table.
 
-**Done when:** the rendered PNG shows the banner without garbled text or
-overflow outside the frame, and every internal README link (the ones
+**Done when:** the banner PNG displays correctly (no garbled text or
+overflow outside the frame), and every internal README link (the ones
 starting with `../../releases/` or pointing at `references/...`) matches a
 file that actually exists in the repo at that path.
 
@@ -154,7 +155,7 @@ repo settings, so `Code → Download ZIP` and the repo landing page show
 this branch, not `main`.
 
 **Done when:** `git diff main codex/locales-slavic --stat` shows only the
-files from Phases 1–3 (plus `README.md`, `assets/banner.svg`) — nothing
+files from Phases 1–3 (plus `README.md`, `assets/banner-stop-slop-multilingual.png`) — nothing
 from upstream's own files appears as changed.
 
 ## Phase 6 — Dry-run the workflow before a real release
