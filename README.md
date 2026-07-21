@@ -2,7 +2,7 @@
 
 ![License: MIT](https://img.shields.io/badge/license-MIT-3f7fbf)
 ![Languages](https://img.shields.io/badge/languages-EN%20%C2%B7%20RU%20%C2%B7%20UA%20%C2%B7%20BE%20%C2%B7%20BG%20%C2%B7%20DE-6b4c8a)
-![Sources verified](https://img.shields.io/badge/sources-24%20verified-4a8f5c)
+![Sources verified](https://img.shields.io/badge/sources-29%20verified-4a8f5c)
 
 A Claude Skill that catches predictable AI writing patterns before they ship — now in six languages, with room for more.
 
@@ -172,6 +172,13 @@ Full detail with confirmed/unconfirmed status and per-source notes: [research/bi
 - Weber, Stefan. plagiatsgutachten.com/blog/chatgpt-texte-erkennen/ — Austrian forensic-linguistics expert, independent of this project
 - Korrektur.de. korrektur.de/ki-texte-erkennen-merkmale-checkliste
 - Literaturcafé. literaturcafe.de/rettet-den-gedankenstrich-vor-der-ki/
+
+**Belarusian — three research passes, strongest single confirmation in this project**
+- Nazaranka, T. (2025). *Navigating Language Contact in the Digital Age: An AI Experiment with Belarusian.* DiSlaw, 2, 17–32. DOI: 10.48789/2025.2.2 — full paper fetched, verified verbatim
+- Poritski, V., Volchek, O., Aparovich, M., Harytskaya, V., Smrz, P. (2026). *Tracking the evolution of LLM capabilities for Belarusian with OpenAI Evals.* LoResLM 2026 (ACL Anthology), 378–387 — full paper fetched, verified verbatim
+- Law of the Republic of Belarus № 420-З (23 July 2008), *Аб Правілах беларускай арфаграфіі і пунктуацыі* — official orthography/punctuation code, cross-confirmed by two further independent education-sector documents (a Ministry of Education exam standard and independent exam-prep materials)
+- Пунько, К., Албут, А. А. «Асаблівасці беларускай мовы ChatGPT.» БДУІР conference proceedings — source confirmed to exist, specific claims not independently line-by-line verified
+- Kaleta, R. *Błędologia w glottodydaktyce białorutenistycznej* [«Памылкалогія ў беларусістычнай глотадыдактыцы»]. University of Warsaw doctoral dissertation — source confirmed to exist, specific claims not independently line-by-line verified
 
 **Related project**
 - Утов, Ілля (Ilya Utov). humanizer-ru. github.com/ilyautov/humanizer-ru (MIT)
